@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TwitHub</title>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="wrapper target">
+        <div class="left target">
+          <a href="https://github.com/omergokdass" target="_blank"
+            ><i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/%C3%B6mer-faruk-g%C3%B6kda%C5%9F-173270340/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/omergokdass/" target="_blank"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+        <div class="center">
+          <a href="">HOME</a>
+          <a href="/pages/services.html">SERVICES</a>
+          <a href="pages/about.html">ABOUT</a>
+        </div>
+        <div class="right">
+          <div class="image-container">
+            <span>
+              <img src="public/img/user.jpg" alt="user" />
+            </span>
+            <div class="overlay-text">This is a sample image and cannot be modified.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header target">
+      <img src="public/img/header-background.jpg" alt="background" />
+      <h1>TwitHub</h1>
+      <h3>Your Opinion</h3>
+    </header>
+    <div class="container">
+      <h1>Your Area</h1>
+      
+      <form id="form">
+          <input id="titleSearch" class="titleSearch" type="text" placeholder="Search Your Topic...">
+          <hr />
+      </form>
+      
+      <!-- Konu başlığı -->
+      <input type="text" id="titleInput" placeholder="Your topic title..." />
+
+      <!-- Metin alanı -->
+      <textarea id="postInput" placeholder="Write something..."></textarea>
+
+      <!-- Gönder butonu -->
+      <button id="postButton">Send</button>
+
+      <!-- Gönderilerin gösterileceği alan -->
+      <div id="postsContainer" class="postsContainer">
+      </div>
+    </div>
+    
+
+    <script src="public/js/scroll.js"></script>
+    <script src="public/js/forum.js"></script>
+  </body>
+</html>
